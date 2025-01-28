@@ -26,9 +26,6 @@
   text-decoration-skip-ink: none;
 }
 
-.our-design-main {
-}
-
 .our-design-main__categories-container {
   padding: 0 20px;
 }
@@ -95,8 +92,24 @@
 }
 
 .our-design-main__categories .active-category {
-  color: var(--white);
+  color: var(--white)!important;
   background: var(--black);
+}
+
+.our-design-main__categories svg{
+  /* transition-duration:  1s; */
+  color: var(--black)!important;
+  stroke: var(--black);
+}
+.category__tab:focus {
+outline: none;
+}
+.category__tab {
+outline: none;
+}
+
+.our-design-main__categories .active-category svg{
+  stroke: var(--white);
 }
 
 .our-design-main__designs {
