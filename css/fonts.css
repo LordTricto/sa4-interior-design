@@ -1,0 +1,112 @@
+/**
+ * @license
+ *
+ * Font Family: 
+ 
+ *
+*/
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: "FreightDispProBlack-Italic";
+  src: url("../assets/fonts/FreightDispProBlack-Italic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProblack-Regular";
+  src: url("../assets/fonts/FreightDispProBlack-Regular.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProBold-Italic";
+  src: url("../assets/fonts/FreightDispProBold-Italic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProBold-Regular";
+  src: url("../assets/FreightDispProBold-Regular.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProBook-Italic";
+  src: url("../assets/fonts/FreightDispProBook-Italic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProBook-Regular";
+  src: url("../assets/fonts/FreightDispProBook-Regular.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProLight-Italic";
+  src: url("../assets/fonts/FreightDispProLight-Italic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FreightDispProLight-Regular";
+  src: url("../assets/fonts/FreightDispProLight-Regular.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProMedium-Italic";
+  src: url("../assets/fonts/FreightDispProMedium-Italic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProMedium-Regular";
+  src: url("../assets/fonts/FreightDispProMedium-Regular.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProSemibold-Italic";
+  src: url("../assets/fonts/FreightDispProSemibold-Italic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreightDispProSemibold-Regular";
+  src: url("../assets/fonts/FreightDispProSemibold-Regular.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}

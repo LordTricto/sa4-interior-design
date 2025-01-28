@@ -1,0 +1,346 @@
+/* our designs page */
+
+/* our design intro section */
+.our-designs-intro {
+  margin: 44px 24px 71px;
+  text-align: center;
+}
+
+.our-designs-intro h1 {
+  font-family: FreightDispProLight-Italic;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 56.16px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.our-designs-intro p {
+  margin: 33px 10px 0;
+  font-family: Product Sans Light;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.our-design-main {
+}
+
+.our-design-main__categories-container {
+  padding: 0 20px;
+}
+
+/* categories */
+.our-design-main__categories {
+  margin: 0 auto 73px;
+  max-width: 1160px;
+  height: 64px;
+  background: url(../assets/images/link-image.png) no-repeat;
+  background-size: cover;
+  border-radius: 58px;
+}
+
+.our-design-main__categories-limit {
+  padding: 0 16px;
+  overflow-x: hidden;
+  background: linear-gradient(
+    126.6deg,
+    rgba(255, 255, 255, 0.12) 28.69%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(140px);
+  height: 100%;
+  width: 100%;
+  border-radius: 58px;
+}
+
+.our-design-main__categories ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+  width: 100%;
+  border-radius: 58px;
+  gap: 13px;
+  /* padding: 14px 16px; */
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.our-design-main__categories button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 154px; */
+  width: 164px;
+  height: 38px;
+  /* padding: 7px 21px 7px 21px; */
+  padding: 7px 18px;
+  gap: 10px;
+  border-radius: 27.5px;
+  border: none;
+  cursor: pointer;
+  font-family: Product Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background: var(--white);
+  color: #00000094;
+}
+
+.our-design-main__categories .active-category {
+  color: var(--white);
+  background: var(--black);
+}
+
+.our-design-main__designs {
+  max-width: 1216px;
+  margin: 0 auto 56px;
+  padding: 0 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.our-design-main__designs--card {
+  width: 100%;
+  height: 441px;
+  padding: 32px 20px;
+  position: relative;
+}
+
+.our-design-main__designs--card button {
+  position: absolute;
+  bottom: 32px;
+  right: 20px;
+  width: 192px;
+  height: 55px;
+  border-radius: 58px;
+  background: linear-gradient(
+    126.6deg,
+    rgba(255, 255, 255, 0.12) 28.69%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(140px);
+  border: none;
+
+  font-family: "Product Sans Light";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 0 22px;
+  cursor: pointer;
+}
+
+.our-design-main-card-1 {
+  background: url(../assets/images/design-card-1.png) no-repeat;
+}
+
+.our-design-main-card-2 {
+  background: url(../assets/images/design-card-2.png) no-repeat;
+}
+
+.our-design-main-card-3 {
+  background: url(../assets/images/design-card-3.png) no-repeat;
+}
+
+.our-design-main-card-4 {
+  background: url(../assets/images/design-card-3.png) no-repeat;
+}
+
+.our-design-main-card-5 {
+  background: url(../assets/images/design-card-4.png) no-repeat;
+}
+
+.our-design-main-card-6 {
+  background: url(../assets/images/design-card-1.png) no-repeat;
+}
+
+.our-design-main-card-7 {
+  background: url(../assets/images/design-card-5.png) no-repeat;
+}
+
+.our-design-main-card-8 {
+  background: url(../assets/images/design-card-6.png) no-repeat;
+}
+
+.our-design-main__designs--card {
+  background-size: cover;
+}
+
+.our-design-main__contact-us-for-more-designs {
+  margin: 0 0 137px;
+  padding: 0 22px;
+}
+
+.our-design-main__contact-us-for-more-designs h3 {
+  padding: 0 11px;
+  font-family: FreightDispProMedium-Italic;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 43.64px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 19px;
+}
+
+.our-design-main__contact-us-for-more-designs p {
+  padding: 0 11px;
+  margin-bottom: 45px;
+  font-family: Product Sans Light;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.contact-us-for-more-designs-link {
+  width: 100%;
+  max-width: 378.77px;
+
+  margin: 0 auto;
+  background: url(../assets/images/link-image.png) no-repeat;
+  background-size: cover;
+  border-radius: 58px;
+}
+
+.contact-us-for-more-designs-link a {
+  width: 100%;
+  height: 55px;
+  backdrop-filter: blur(140px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  border-radius: 58px;
+  font-family: Product Sans Light;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--black);
+  padding: 14px 16.47px 14px 23.77px;
+  background: linear-gradient(
+    126.6deg,
+    rgba(255, 255, 255, 0.12) 28.69%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* responsiveness */
+@media screen and (min-width: 680px) {
+  /* our design intro section */
+  .our-designs-intro {
+    margin: 109px 24px 91px;
+  }
+
+  .our-designs-intro h1 {
+    font-size: 65px;
+    line-height: 81.12px;
+  }
+
+  .our-designs-intro p {
+    margin: 44px auto 0;
+    padding: 0 12px;
+    max-width: 730px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .our-design-main__designs {
+    margin: 0 auto 123px;
+  }
+
+  .our-design-main__designs--card {
+    max-width: 380px;
+  }
+
+  .our-design-main__contact-us-for-more-designs {
+    margin: 0 0 227px;
+    padding: 0 22px;
+  }
+
+  .our-design-main__contact-us-for-more-designs h3 {
+    font-size: 45px;
+    line-height: 56.11px;
+    margin-bottom: 22px;
+  }
+
+  .our-design-main__contact-us-for-more-designs p {
+    max-width: 333px;
+    margin: 0 auto 69px;
+  }
+
+  .contact-us-for-more-designs-link a {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* categories */
+  .our-design-main__categories {
+    margin: 0 auto 73px;
+    /* max-width: 1120px; */
+    max-width: 1160px;
+    height: 55px;
+    background: url(../assets/images/link-image.png) no-repeat;
+    background-size: cover;
+    border-radius: 58px;
+  }
+
+  .our-design-main__categories-limit {
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(
+      126.6deg,
+      rgba(255, 255, 255, 0.12) 28.69%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    backdrop-filter: blur(140px);
+    height: 100%;
+    width: 100%;
+    border-radius: 58px;
+  }
+
+  .our-design-main__categories ul {
+    gap: 13px;
+    padding: 14px 16px;
+  }
+
+  .our-design-main__categories button {
+    /* width: 154px; */
+    width: unset;
+    /* padding: 7px 21px 7px 21px; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .our-design-main__designs {
+    justify-content: flex-start;
+  }
+}
+.category__content {
+  display: none;
+}
+.active-category-content {
+  display: flex;
+}

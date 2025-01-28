@@ -1,0 +1,1214 @@
+/* introductory page */
+.introductory-page {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url(../assets/images/intro-page.png) no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+.introductory-page__banner {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 54px;
+  gap: 195px;
+}
+
+.introductory-page__banner--loading-animation p {
+  font-family: "Product Sans Light";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 15px;
+}
+
+.loading-area {
+  display: flex;
+  gap: 0.7px;
+  background: var(--white);
+  width: 132px;
+  height: 11px;
+  border-radius: 9.5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loading-area .pill-step {
+  width: 35px;
+  height: 100%;
+  background: var(--black);
+  opacity: 0.1;
+}
+
+.loading-area .pill-step:first-child {
+  border-radius: 9.5px 0 0 9.5px;
+  opacity: 1;
+}
+
+.loading-area .pill-step:last-child {
+  border-radius: 0 9.5px 9.5px 0;
+}
+
+.loading-area .pill-step.active {
+  opacity: 1;
+}
+
+/* header section */
+#header {
+  background: var(--white);
+}
+
+.glass-background-header {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 54.05%,
+      rgba(0, 0, 0, 0.1944) 67.36%,
+      rgba(0, 0, 0, 0.034374) 72.09%,
+      rgba(0, 0, 0, 0.048) 76.29%,
+      rgba(0, 0, 0, 0.091993) 82.73%,
+      rgba(0, 0, 0, 0.126965) 87.85%,
+      rgba(0, 0, 0, 0.01534) 93.79%,
+      rgba(0, 0, 0, 0.01) 100%
+    ),
+    url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png)
+      no-repeat !important;
+  background-size: cover !important;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(140px);
+  z-index: -1;
+}
+
+.header-container {
+  max-width: 1280px;
+  padding: 26px 29px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 679px) {
+  .header-container {
+    background: #fff;
+  }
+}
+
+.header-container__logo img {
+  width: 70px;
+}
+
+.header-container__nav {
+  position: absolute;
+  width: 100%;
+  transform: translateX(100%);
+  left: 0;
+  top: 90px;
+  height: 100vh;
+  padding: 100px 29px 10rem;
+  background: var(--white);
+}
+
+.glass-background-header .header-container__nav {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.5)
+  );
+  /* backdrop-filter: blur(140px); */
+}
+@media (max-width: 679px) {
+  .glass-background-header .header-container__nav {
+    background: #fff;
+  }
+}
+
+.header-container__nav--links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 718px;
+  width: 169px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.header-container__nav a {
+  font-family: "Product Sans";
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 300;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--black);
+}
+
+.header-container__nav .active-link,
+.header-container__nav a:hover {
+  color: #bb9b4e;
+  font-weight: 500;
+}
+
+.top-positioning {
+  transform: translateX(0);
+}
+
+#menu-btn {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 45px;
+  height: 45px;
+}
+
+/* hero section */
+.hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 183px 29px 27px;
+}
+
+.hero-container__text-container {
+  max-width: 993px;
+}
+
+.hero-container__text-container h1 {
+  font-family: "FreightDispProMedium-Italic";
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 56.11px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+}
+
+.hero-container__text-container h1 span {
+  font-family: "FreightDispProLight-Italic";
+  line-height: 56.16px;
+  color: var(--primary-yellow);
+}
+
+.hero-container__text-container p {
+  font-family: "Product Sans Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+}
+
+/* intro container section */
+.intro-container {
+  padding: 31px 0 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  max-width: 1193px;
+  margin: 0 auto;
+}
+
+.intro-container__airbnb-image--image {
+  padding: 0 19px;
+}
+
+.intro-container__airbnb-image--image img {
+  height: 314px;
+  object-fit: cover;
+  border-radius: 15px;
+  /* margin-bottom: 15px; */
+}
+
+.intro-container__airbnb-image--image p {
+  font-family: "Product Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 15px 0 0;
+}
+
+.intro-container__airbnb-image--details {
+  display: none;
+}
+
+.intro-container__text-container {
+  padding: 0 19px;
+  padding: 0 12px;
+  max-width: 858px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .intro-container__text-container {
+    max-width: 100%;
+  }
+}
+
+.hero-container__text-container--text {
+  padding: 0 6px;
+}
+
+.intro-container__text-container h2 {
+  font-family: "FreightDispProLight-Italic";
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 49.92px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 0 15px;
+}
+
+.intro-container__text-container h2 span {
+  font-family: "FreightDispProBook-Regular";
+  line-height: 49.68px;
+}
+
+.intro-container__text-container p {
+  margin: 39px auto 36px;
+  font-family: "Product Sans Light";
+  font-weight: 300;
+  line-height: 29.12px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  max-width: 760px;
+}
+
+/* .intro-container__text-container .learn-more-link-container {
+  width: 100%;
+  max-width: 378.77px;
+  margin: 0 auto;
+  background: url(../assets/images/link-image.png) no-repeat;
+  background-size: cover;
+  border-radius: 58px;
+} */
+
+.intro-container__text-container .learn-more-link {
+  backdrop-filter: blur(140px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 378px;
+  margin: 0 auto;
+  height: 55px;
+  border-radius: 58px;
+  font-family: "Product Sans Light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--black);
+  padding: 14px 12px 14px;
+  overflow: hidden;
+}
+@media (max-width: 400px) {
+  .intro-container__text-container .learn-more-link {
+    width: 100%;
+    font-size: 12px;
+  }
+  .intro-container__text-container .learn-more-link img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.intro-container__text-container .learn-more-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/images/link-image.png) no-repeat;
+  background-size: cover;
+  filter: blur(30px);
+  z-index: -1;
+}
+
+.intro-container__text-container .learn-more-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    126.6deg,
+    rgb(203, 185, 162) 28.69%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+
+  z-index: -1;
+}
+/* why choose our service section */
+.why-choose-our-service {
+  max-width: 1107px;
+  margin: 0 auto;
+}
+
+.why-choose-our-service__header {
+  max-width: 658px;
+  margin: 0 auto;
+  padding: 0 36px;
+  text-align: center;
+}
+
+.why-choose-our-service__header h2 {
+  font-family: "FreightDispProLight-Italic";
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 43.68px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 53px;
+}
+
+.why-choose-our-service__header h2 span {
+  font-family: "FreightDispProBook-Regular";
+  line-height: 43.47px;
+}
+
+.why-choose-our-service__main {
+  margin: 0 12px 46px;
+  background: url(../assets/images/why-choose-our-service-banner.png) no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.why-choose-our-service__banner {
+  background: linear-gradient(
+    126.6deg,
+    rgba(255, 255, 255, 0.12) 28.69%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(183px);
+  border-radius: 15px;
+  padding: 14px 16px 25px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.why-choose-our-service__main--points {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 22px 22px;
+  max-width: 512px;
+  flex-wrap: wrap;
+}
+
+.why-choose-our-service__main--points .points-header {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.why-choose-our-service__main--points .points-header h3 {
+  font-family: "Product Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.why-choose-our-service__main--points p {
+  font-family: "Product Sans Light";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.why-choose-us__standout {
+  margin: 0 12px 46px;
+  border-radius: 15px;
+  background: url(../assets/images/air-bnb-banner.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.why-choose-us__standout--banner {
+  display: flex;
+  border-radius: 15px;
+  background: linear-gradient(
+    126.6deg,
+    rgba(255, 255, 255, 0.12) 28.69%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(183px);
+  overflow: hidden;
+}
+
+.why-choose-us__standout--details {
+  padding: 17px 0 72px 23px;
+  width: 75%;
+  max-width: 569px;
+}
+
+.why-choose-us__standout--details-header {
+  margin-bottom: 14px;
+}
+
+.why-choose-us__standout--details-header h3 {
+  font-family: "FreightDispProBold-Italic";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 38.13px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.why-choose-us__standout--details-header h3 span {
+  font-family: "FreightDispProBook-Regular";
+  font-style: normal;
+  line-height: 37.26px;
+  color: #ff385c;
+}
+
+.why-choose-us__standout--details-header p {
+  font-family: "FreightDispProLight-Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.7px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+}
+
+.why-choose-us__standout--details-details p {
+  font-family: "Product Sans Light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+}
+
+.why-choose-us__standout--details-image {
+  position: absolute;
+  height: 326px;
+  bottom: -0.5rem;
+  right: -25rem;
+}
+
+/* our designs section */
+.our-designs {
+  max-width: 1111px;
+  margin: 0 auto 94px;
+}
+
+.our-designs__header {
+  margin: 0 20px 56px;
+}
+
+.our-designs__header h2 {
+  font-family: "FreightDispProLight-Italic";
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 43.68px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 19px;
+}
+
+.our-designs__header h2 span {
+  font-family: "FreightDispProMedium-Italic";
+  line-height: 43.64px;
+}
+
+.our-designs__header p {
+  font-family: "Product Sans Light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 29.92px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.our-designs__main {
+  margin: 0 22px;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d";
+  gap: 19px;
+}
+
+.our-designs__main .bedrooms {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 55.91%
+    ),
+    url(../assets/images/bedroom.png) no-repeat;
+  grid-area: a;
+}
+
+.our-designs__main .sitting-rooms {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 55.91%
+    ),
+    url(../assets/images/sitting-room.png) no-repeat;
+  grid-area: b;
+}
+
+.our-designs__main .dining-rooms {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 55.91%
+    ),
+    url(../assets/images/dining-room.png) no-repeat;
+  grid-area: c;
+}
+
+.our-designs__main .bathrooms {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 55.91%
+    ),
+    url(../assets/images/bathroom.png) no-repeat;
+  grid-area: d;
+}
+
+.our-designs__main .our-designs__main--items {
+  /* height: 220px; */
+  padding: 53px 24px 11.12px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.our-designs__main--items h3 {
+  font-family: "FreightDispProLight-Italic";
+  /* font-size: 65px; */
+  font-size: 55px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 81.12px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+}
+
+.our-designs__main--items button {
+  width: 189px;
+  height: 55px;
+  border-radius: 58px;
+  background: linear-gradient(
+    126.6deg,
+    rgba(255, 255, 255, 0.12) 28.69%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-backdrop-filter: blur(140px); /* Add WebKit prefix */
+  backdrop-filter: blur(140px);
+  border: none;
+  font-family: "Product Sans Light";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 19px;
+  cursor: pointer;
+}
+
+/* testimonials section */
+/* .testimonials {} */
+
+.testimonials__header h2 {
+  margin: 0 69px 44px;
+  font-family: "FreightDispProLight-Italic";
+
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 43.68px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.testimonials__header h2 span {
+  font-family: "FreightDispProMedium-Italic";
+  font-family: "FreightDisp Pro Medium Italic";
+}
+
+.testimonials__main {
+  margin: 0 auto 87px;
+  max-width: 592px;
+  padding: 0 21px;
+}
+
+.testimonial-card {
+  background: #eff0f6;
+  border-radius: 12px;
+  border: 1px solid #eff0f6;
+  box-shadow: 0px 5px 14px 0px #080f340a;
+  max-width: 592px;
+  padding: 40px 34px;
+}
+
+.testimonial-card__review p {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #514f6e;
+  margin-bottom: 15px;
+}
+
+.testimonial-card__reviewer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-card__reviewer--details h4 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #170f49;
+  margin-bottom: 6.5px;
+}
+
+.testimonial-card__reviewer--details p {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #6f6c90;
+}
+
+/* contact us section */
+#contact-us {
+  margin: 0 14px;
+}
+
+.contact-us-pointer {
+  margin-left: 3px;
+  border: 0.5px solid var(--black);
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  justify-content: center;
+  width: 316px;
+  height: 52px;
+  border-radius: 27.5px;
+}
+
+.contact-us-pointer p {
+  font-family: Product Sans Light;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.contact-us-line {
+  border-left: 0.5px solid var(--black);
+  height: 38.01px;
+  margin-left: 148.25px;
+}
+
+.contact-us {
+  background: url(../assets/images/air-bnb-banner.png) no-repeat;
+  background-size: cover;
+}
+
+.contact-us-banner {
+  background: linear-gradient(
+    126.6deg,
+    rgba(255, 255, 255, 0.12) 28.69%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(183px);
+  padding: 11px 11px 47px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-us__image img {
+  height: 204px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.contact-us__details--header h2 {
+  font-family: "FreightDispProLight-Italic";
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 43.68px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.contact-us__details--header p {
+  font-family: "Product Sans Light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 29.92px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 13px 0 26px;
+}
+
+.contact-us__details--links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-us__details--links li {
+  padding: 14px 22px;
+  background: var(--white);
+  border-radius: 58px;
+  backdrop-filter: blur(140px);
+}
+
+.contact-us__details--links li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-us__details--links li a span {
+  font-family: Product Sans Light;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+/* footer section */
+.footer {
+  border-top: 1px solid #0000001a;
+  text-align: center;
+  padding: 50px 19px;
+}
+
+.footer p {
+  font-family: "Hanken Grotesk";
+  line-height: 28.16px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #00000080;
+}
+
+/* responsiveness */
+@media screen and (min-width: 680px) {
+  #menu-btn {
+    display: none;
+  }
+
+  .header-container__logo img {
+    width: unset;
+  }
+
+  .header-container__nav {
+    position: static;
+    transform: translateX(0);
+    padding: 0;
+    height: unset;
+    background: unset;
+    box-shadow: none;
+  }
+
+
+  .glass-background-header .header-container__nav {
+    background: inherit;
+  }
+
+  .header-container__nav--links {
+    justify-content: space-between;
+    align-items: center;
+    width: unset;
+    /* padding-top: 13px; */
+    gap: 37px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-container__nav--links a {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  /* intro container section */
+  .intro-container {
+    flex-direction: column-reverse;
+    gap: 73px;
+    padding: 52px 86px 148px;
+  }
+
+  .intro-container__airbnb-image--image {
+    padding: 0;
+    margin-bottom: 29px;
+  }
+
+  .intro-container__airbnb-image--image img {
+    height: unset;
+  }
+
+  .intro-container__airbnb-image--image p {
+    border-bottom: 1px solid #dcb05a;
+    width: fit-content;
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .intro-container__airbnb-image--details {
+    display: block;
+  }
+
+  .intro-container__airbnb-image--details p {
+    font-weight: 300;
+    line-height: 30.4px;
+  }
+
+  .intro-container__text-container p {
+    margin: 50px auto 52px;
+  }
+
+  .intro-container__text-container h2 {
+    font-size: 55px;
+    /* font-size: 65px; */
+    line-height: 81.12px;
+  }
+
+  /* why choose our service section */
+  .why-choose-our-service__header h2 {
+    font-size: 65px;
+    line-height: 81.12px;
+    /* margin-bottom: 52px; */
+  }
+
+  .why-choose-our-service__header h2 span {
+    font-size: 65px;
+    line-height: 80.73px;
+  }
+
+  .why-choose-our-service__main {
+    margin: 0 12px 100px;
+  }
+
+  .why-choose-our-service__banner {
+    gap: 18px;
+  }
+
+  .why-choose-our-service__main--points p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .why-choose-us__standout {
+    margin: 0 12px 91px;
+  }
+
+  .why-choose-us__standout--details {
+    padding: 66px 0 66px 62px;
+  }
+
+  /* our designs section */
+  .our-designs__header h2 {
+    font-size: 65px;
+    line-height: 81.12px;
+    margin-bottom: 45px;
+  }
+
+  /* testimonials section */
+  .testimonials__header h2 {
+    max-width: 436px;
+    margin: 0 auto 112px;
+    font-size: 65px;
+    line-height: 81.12px;
+  }
+
+  .testimonials__main {
+    margin: 0 auto 181px;
+    max-width: 592px;
+    padding: 0 21px;
+  }
+
+  .testimonial-card {
+    padding: 44px 36px;
+  }
+
+  .testimonial-card__review p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-card__reviewer--details h4 {
+    font-size: 18px;
+  }
+
+  .testimonial-card__reviewer--details p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-container__nav li {
+    padding: 4px 23px 4px 23px;
+    border-radius: 17px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  .hero-container {
+    padding: 341px 74px 208px;
+  }
+
+  .hero-container__text-container h1 {
+    font-size: 60px;
+    /* font-size: 55px; */
+    line-height: 81.05px;
+  }
+
+  .hero-container__text-container h1 span {
+    line-height: 81.12px;
+  }
+
+  .why-choose-us__standout--details {
+    width: 100%;
+  }
+
+  .why-choose-us__standout--details-image {
+    right: 0;
+  }
+
+  .why-choose-us__standout--details-header {
+    margin-bottom: 19px;
+  }
+
+  .why-choose-us__standout--details-header h3 {
+    font-size: 45px;
+    line-height: 57.2px;
+    margin-bottom: 13px;
+  }
+
+  .why-choose-us__standout--details-header p {
+    font-size: 25px;
+    line-height: 30.88px;
+  }
+
+  /* our designs section */
+  .our-designs {
+    margin: 0 auto 150px;
+  }
+
+  .our-designs__main {
+    max-width: 1111px;
+    display: grid;
+    grid-template-columns: 365px;
+    grid-auto-rows: 270px;
+    grid-template-areas:
+      "a  b b "
+      "a  c c "
+      "d  d d ";
+    gap: 25px;
+  }
+
+  .our-designs__main .our-designs__main--items {
+    padding: 53px 24px 60px;
+  }
+
+  /* contact us section */
+  #contact-us {
+    max-width: 1111px;
+    margin: 0 auto;
+    padding: 0 14px;
+  }
+
+  .contact-us-pointer {
+    margin-left: 0;
+    gap: 22px;
+    width: 375px;
+    height: 55px;
+  }
+
+  .contact-us-pointer p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contact-us-line {
+    margin-left: 232.25px;
+  }
+
+  .contact-us-banner {
+    padding: 23px 23px 23px 53px;
+    gap: 113.23px;
+    flex-direction: row-reverse;
+  }
+
+  .contact-us__image img {
+    height: 100%;
+  }
+
+  .contact-us__details--header h2 {
+    font-size: 45px;
+    line-height: 56.16px;
+    margin-top: 73px;
+  }
+
+  .contact-us__details--header p {
+    margin: 13px 0 61px;
+  }
+
+  .contact-us__details--links ul {
+    margin-bottom: 150px;
+  }
+
+  .contact-us__details--links li {
+    padding: 14px 22px;
+  }
+
+  .contact-us__details--links li a span {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .header-container {
+    padding: 26px 98px;
+    gap: 60.34px;
+    justify-content: unset;
+  }
+}
+
+.slider {
+  max-width: 100rem;
+  margin: 0 auto;
+  position: relative;
+  height: 30rem;
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 1s;
+}
+
+.slider-dots {
+  display: flex;
+}
+
+.slider-dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.slider-dots__dot:last-child {
+  margin: 0;
+}
+
+.slider-dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #888;
+  opacity: 1;
+}
+.slider__button--container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider__btn {
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  cursor: pointer;
+}
