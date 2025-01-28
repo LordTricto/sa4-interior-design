@@ -1257,7 +1257,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1277,6 +1277,7 @@ align-items: center;
 
 .sliderTwo-dots__dot {
   border: none;
+  outline: none;
   background-color: #D9D9D9;
   opacity: 0.7;
   height: 3px;
@@ -1284,6 +1285,11 @@ align-items: center;
   width: 100%;
   cursor: pointer;
   transition: all 0.5s;
+}
+.sliderTwo-dots__dot:focus {
+  border: none;
+  outline: none;
+
 }
 
 .sliderTwo-dots__dot:last-child {
