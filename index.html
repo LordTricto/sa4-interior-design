@@ -21,7 +21,6 @@
   <!-- <script src="anime.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
 </head>
 
 <body>
@@ -45,7 +44,6 @@
     </div>
   </section>
 
-  
   <!-- Header Section -->
   <header id="header" class="glass-background-header">
     <div class="header">
@@ -90,14 +88,6 @@
   </header>
 
   <main class="main--none">
-
-    <div class="test">
-
-    
-      <div class="box green" id="box1">ease:sine</div>
-    <div class="box blue" id="box2">2 tweens</div>
-
-  </div>
     <section class="intro hidden">
       <div class="intro-container">
         <div class="intro-container__airbnb-image-details">
@@ -437,18 +427,7 @@
   </footer>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-
-      const dur = 5;
-const dist = 600;
-
-      gsap.to("#box1", { duration: dur, x: dist, ease: "sine" });
-
-gsap
-  .timeline()
-  .to("#box2", { duration: dur * 0.9, x: dist * 0.96, ease: "none" })
-  .to("#box2", { duration: dur * 0.1, x: dist, ease: "sine" });
-
-      gsap.registerPlugin(ScrollTrigger, CustomEase)
+      gsap.registerPlugin(ScrollTrigger)
       let trigger = gsap.utils.toArray('.hidden');
 
       trigger.forEach((element, index) => {
@@ -457,13 +436,12 @@ gsap
         gsap.to(element, {
           opacity:  index === 0 ? 1: 1,
           translateY:  index === 0 ? 0: 0,
-          duration: index === 0 ? 0: 3,
-         ease: "linear",
-// ease: CustomEase.create("custom", "M0,0 C0.359,0.409 0.375,0.403 0.507,0.523 0.562,0.573 0.852,0.882 1,1 "),
+          duration: index === 0 ? 0: 1.5,
+          ease: "in-out",
           scrollTrigger: {
             trigger: index === 0 ? element : trigger[index - 1],
-            start: index === 0 ? "center top" : 'bottom center+=300',
-            markers: true
+            start: index === 0 ? "center top" : 'bottom center+=400',
+            // markers: true
           }
         })
       })

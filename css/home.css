@@ -1442,7 +1442,6 @@
 .hidden {
   opacity: 0;
   transform: translateY(20%);
-  transition-timing-function: ease-in-out!important;
   /* transition-duration:  2s; */
   /* transition-property: opacity, translateY ; */
 
@@ -1456,29 +1455,3 @@
 /* @media(prefers-reduced-motion){
 
 } */
-
-.test{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.box {
-  width:160px;
-  height:60px;
-  position:relative;
-  margin-bottom:8px;
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.25rem;
-  font-family: 'Roboto', sans-serif;
-}
-.green {
-  background-color:#88ce02;
-}
-.blue {
-  background-color:#42a6e0;
-}
