@@ -323,11 +323,11 @@
 }
 
 
-@media screen and (max-width: 679px) {
+/* @media screen and (max-width: 679px) {
   .pricing-banner__details h1,
   .design-plan__header h2,
   .design-plan__packages--card-details-header h3 span,
   .design-plan__packages--card-description-header h3 {
     font-family: "FreightDispjjjProMedium-Italic";
   }
-}
+} */

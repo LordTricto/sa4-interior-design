@@ -25,11 +25,16 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 54px;
-  gap: 195px;
+  /* gap: 195px; */
+  position: relative;
+}
+
+.introductory-page__banner--logo-container  img{
+  max-width: 120px ;
+  /* height: ; */
 }
 
 .introductory-page__banner--loading-animation p {
@@ -201,11 +206,16 @@
 .hero-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 183px 29px 27px;
+  padding: 5.5rem 29px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100vh;
 }
 
 .hero-container__text-container {
   max-width: 993px;
+  height: fit-content;
 }
 
 .hero-container__text-container h1 {
@@ -214,6 +224,7 @@
   font-style: italic;
   font-weight: 400;
   line-height: 56.11px;
+  
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: var(--white);
@@ -229,6 +240,7 @@
   font-family: "Product Sans Light";
   font-size: 20px;
   font-weight: 300;
+  padding-top: 1rem;
   line-height: 30px;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -530,8 +542,8 @@
 } */
 
 .why-choose-us__standout--details {
-  padding: 17px 0 72px 23px;
-  width: 75%;
+  padding: 17px 23px 6.5rem 23px;
+  width: 100%;
   max-width: 569px;
 }
 
@@ -567,6 +579,10 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: var(--white);
+}
+
+.why-choose-us__standout--details-details{
+  padding-right: 2.5rem;
 }
 
 .why-choose-us__standout--details-details p {
@@ -850,6 +866,10 @@
   width: 100%;
 }
 
+.contact-us__details--header{
+  padding: 0 1rem;
+}
+
 .contact-us__details--header h2 {
   font-family: "FreightDispProLight-Italic";
   font-size: 35px;
@@ -922,6 +942,11 @@
   #menu-btn {
     display: none;
   }
+
+   .introductory-page__banner--logo-container  img{
+  max-width: unset;
+  /* height: ; */
+}
 
   .header-container__logo img {
     width: unset;
@@ -1074,7 +1099,11 @@
     font-size: 18px;
   }
 }
-
+@media screen and (max-width: 460px) {
+   .hero-container {
+     padding: 2.5rem 29px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .header-container__nav li {
     padding: 4px 23px 4px 23px;
@@ -1083,11 +1112,11 @@
   }
 
   .hero-container {
-    padding: 341px 74px 208px;
+     padding: 6.5rem 5rem;
   }
 
   .hero-container__text-container h1 {
-    font-size: 60px;
+    font-size: 65px;
     /* font-size: 55px; */
     line-height: 81.05px;
   }
@@ -1358,7 +1387,7 @@
 }
 
 
-@media screen and (max-width: 679px) {
+/* @media screen and (max-width: 679px) {
   .hero-container__text-container h1,
   .hero-container__text-container h1 span,
   .intro-container__text-container h2,
@@ -1374,7 +1403,27 @@
   .testimonials__header h2,
   .testimonials__header h2 span,
   .contact-us__details--header h2 {
-    /* font-family: unset; */
     font-family: "FreightDispjjjProMedium-Italic";
   }
+} */
+
+.testimonial-card__reviewer--picture{
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+
+.testimonial-card__reviewer--picture img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.introductory-page__banner--loading-animation{
+  position: absolute;
+  bottom: 52px;
+  margin: 0 auto;
 }
