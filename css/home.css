@@ -1441,7 +1441,8 @@
 
 .hidden {
   opacity: 0;
-  transform: translateY(5%);
+  transform: translateY(20%);
+  transition-timing-function: ease-in-out!important;
   /* transition-duration:  2s; */
   /* transition-property: opacity, translateY ; */
 
