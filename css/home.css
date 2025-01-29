@@ -16,8 +16,10 @@
 }
 
 .introductory-page__banner {
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
   backdrop-filter: blur(20px);
+  background: #a0a0a007; /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(20px); /* Add this line first, it fixes blur for Safari*/
   width: 100%;
   height: 100%;
   display: flex;
@@ -107,8 +109,10 @@
   width: 100%;
   height: 100%;
   backdrop-filter: blur(140px);
-  --webkit-backdrop-filter: blur(140px);
   z-index: -1;
+
+  background: #a0a0a007; /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(140px); /* Add this line first, it fixes blur for Safari*/
 }
 
 .header-container {
@@ -296,7 +300,8 @@
 }
 
 .intro-container__text-container h2 span {
-  font-family: "FreightDispProBook-Regular";
+  font-family: FreightDispProLight-Regular;
+  /* font before - FreightDispProBook-Regular */
   line-height: 49.68px;
 }
 
@@ -321,12 +326,15 @@
 
 .intro-container__text-container .learn-more-link {
   backdrop-filter: blur(140px);
+    background: #a0a0a007; /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(140px); /* Add this line first, it fixes blur for Safari*/
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 9px;
-  min-width: 344px;
+  /* min-width: 344px; */
+  text-align: left;
   width: fit-content;
   margin: 0 auto;
   height: 55px;
@@ -344,7 +352,7 @@
 @media (max-width: 400px) {
   .intro-container__text-container .learn-more-link {
     width: 100%;
-    font-size: 12px;
+    /* font-size: 12px; */
   }
   .intro-container__text-container .learn-more-link img {
     height: 20px;
@@ -405,7 +413,8 @@
 }
 
 .why-choose-our-service__header h2 span {
-  font-family: "FreightDispProBook-Regular";
+    font-family: FreightDispProLight-Regular;
+  /* font before - FreightDispProBook-Regular */
   line-height: 43.47px;
 }
 
@@ -417,12 +426,14 @@
 }
 
 .why-choose-our-service__banner {
-  background: linear-gradient(
+  /* background: linear-gradient(
     126.6deg,
     rgba(255, 255, 255, 0.12) 28.69%,
     rgba(255, 255, 255, 0) 100%
-  );
+  ); */
   backdrop-filter: blur(183px);
+    background: #a0a0a007; /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(183px); /* Add this line first, it fixes blur for Safari*/
   border-radius: 15px;
   padding: 14px 16px 25px;
   display: flex;
@@ -476,12 +487,13 @@
 .why-choose-us__standout--banner {
   display: flex;
   border-radius: 15px;
-   background: linear-gradient(
+   /* background: linear-gradient(
     126.6deg,
     rgba(255, 255, 255, 0.12) 28.69%,
     rgba(255, 255, 255, 0) 100%
-  );
-  --webkit-backdrop-filter: blur(8px);
+  ); */
+    background: #a0a0a007; /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(183px); /* Add this line first, it fixes blur for Safari*/
   backdrop-filter: blur(183px);
   overflow: hidden;
   position: relative;
@@ -531,7 +543,8 @@
 }
 
 .why-choose-us__standout--details-header h3 span {
-  font-family: "FreightDispProBook-Regular";
+  font-family: FreightDispProLight-Regular;
+  /* font before - FreightDispProBook-Regular */
   font-style: normal;
   line-height: 37.26px;
   color: #ff385c;
@@ -677,13 +690,14 @@
   width: 189px;
   height: 55px;
   border-radius: 58px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     126.6deg,
     rgba(255, 255, 255, 0.12) 28.69%,
     rgba(255, 255, 255, 0) 100%
-  );
-  -webkit-backdrop-filter: blur(140px); /* Add WebKit prefix */
+  ); */
   backdrop-filter: blur(140px);
+    background: #a0a0a007; /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(140px); /* Add this line first, it fixes blur for Safari*/
   border: none;
   font-family: "Product Sans Light";
   font-size: 18px;
@@ -811,12 +825,14 @@
 }
 
 .contact-us-banner {
-  background: linear-gradient(
+  /* background: linear-gradient(
     126.6deg,
     rgba(255, 255, 255, 0.12) 28.69%,
     rgba(255, 255, 255, 0) 100%
-  );
+  ); */
   backdrop-filter: blur(183px);
+    background: #a0a0a007; /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(183px); /* Add this line first, it fixes blur for Safari*/
   padding: 11px 11px 47px;
   display: flex;
   flex-direction: column;
@@ -860,6 +876,9 @@
   background: var(--white);
   border-radius: 58px;
   backdrop-filter: blur(140px);
+  /* todo idk what this is */
+    /* background: #a0a0a007;  */
+  -webkit-backdrop-filter: blur(140px); /* Add this line first, it fixes blur for Safari*/
 }
 
 .contact-us__details--links li a {
