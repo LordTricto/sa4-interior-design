@@ -944,12 +944,13 @@
   }
 
    .introductory-page__banner--logo-container  img{
-  max-width: unset;
+  max-width: 200px;
   /* height: ; */
 }
 
   .header-container__logo img {
     width: unset;
+    max-width: 108px;
   }
 
   .header-container__nav {
