@@ -1438,3 +1438,20 @@
    }
 
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateY(5%);
+  /* transition-duration:  2s; */
+  /* transition-property: opacity, translateY ; */
+
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+/* @media(prefers-reduced-motion){
+
+} */
