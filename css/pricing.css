@@ -92,6 +92,7 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
 @media (max-width: 400px) {
   .design-plan__packages--card-details-header h3 span {
     font-size: 20px;
@@ -179,6 +180,7 @@
 
 /* responsiveness */
 @media screen and (min-width: 1024px) {
+
   /* pricing banner */
   .pricing-banner {
     margin: 46px auto 83px;
@@ -269,9 +271,6 @@
     height: 100%;
   }
 
-  .design-plan__packages--card-description-image {
-  }
-
   .design-card-1 .design-plan__packages--card-description {
     background: #2e6434;
   }
@@ -283,9 +282,6 @@
   .design-plan__packages--card-details {
     border-radius: 0 20px 20px 0px;
     padding: 40px 40px 24px;
-  }
-
-  .design-plan__packages--card-details-header h3 {
   }
 
   .design-plan__packages--card-details-header h3 span {
@@ -324,4 +320,14 @@
 
 .design-plan__packages--wrapper {
   padding: 33px 23px 24px;
+}
+
+
+@media screen and (max-width: 679px) {
+  .pricing-banner__details h1,
+  .design-plan__header h2,
+  .design-plan__packages--card-details-header h3 span,
+  .design-plan__packages--card-description-header h3 {
+    font-family: "FreightDispjjjProMedium-Italic";
+  }
 }

@@ -1,7 +1,7 @@
 /* introductory page */
 
-.main--none{
-  padding-top: unset!important;
+.main--none {
+  padding-top: unset !important;
 }
 
 .introductory-page {
@@ -18,8 +18,10 @@
 .introductory-page__banner {
   /* background: rgba(255, 255, 255, 0.05); */
   backdrop-filter: blur(20px);
-  background: #a0a0a007; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(20px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(20px);
+  /* Add this line first, it fixes blur for Safari*/
   width: 100%;
   height: 100%;
   display: flex;
@@ -78,8 +80,7 @@
 }
 
 .glass-background-header {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(255, 255, 255, 0) 54.05%,
       rgba(0, 0, 0, 0.1944) 67.36%,
       rgba(0, 0, 0, 0.034374) 72.09%,
@@ -87,10 +88,8 @@
       rgba(0, 0, 0, 0.091993) 82.73%,
       rgba(0, 0, 0, 0.126965) 87.85%,
       rgba(0, 0, 0, 0.01534) 93.79%,
-      rgba(0, 0, 0, 0.01) 100%
-    ),
-    url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png)
-      no-repeat !important;
+      rgba(0, 0, 0, 0.01) 100%),
+    url(../assets/images/37\ Waterside\ Lane\ -\ pKF93fhtHXOBc2rxAhew\ 1.png) no-repeat !important;
   background-size: cover !important;
 }
 
@@ -111,8 +110,10 @@
   backdrop-filter: blur(140px);
   z-index: -1;
 
-  background: #a0a0a007; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(140px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(140px);
+  /* Add this line first, it fixes blur for Safari*/
 }
 
 .header-container {
@@ -123,6 +124,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 @media (max-width: 679px) {
   .header-container {
     background: #fff;
@@ -145,13 +147,12 @@
 }
 
 .glass-background-header .header-container__nav {
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.5)
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.5));
   /* backdrop-filter: blur(140px); */
 }
+
 @media (max-width: 679px) {
   .glass-background-header .header-container__nav {
     background: #fff;
@@ -326,8 +327,10 @@
 
 .intro-container__text-container .learn-more-link {
   backdrop-filter: blur(140px);
-    background: #a0a0a007; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(140px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(140px);
+  /* Add this line first, it fixes blur for Safari*/
   position: relative;
   display: flex;
   align-items: center;
@@ -349,11 +352,13 @@
   padding: 14px 10px 14px 24px;
   overflow: hidden;
 }
+
 @media (max-width: 400px) {
   .intro-container__text-container .learn-more-link {
     width: 100%;
     /* font-size: 12px; */
   }
+
   .intro-container__text-container .learn-more-link img {
     height: 20px;
     width: 20px;
@@ -380,14 +385,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    126.6deg,
-    rgb(203, 185, 162) 28.69%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
+  background: linear-gradient(126.6deg,
+      rgb(203, 185, 162) 28.69%,
+      rgba(255, 255, 255, 0.5) 100%);
 
   z-index: -1;
 }
+
 /* why choose our service section */
 .why-choose-our-service {
   max-width: 1107px;
@@ -413,7 +417,7 @@
 }
 
 .why-choose-our-service__header h2 span {
-    font-family: FreightDispProLight-Regular;
+  font-family: FreightDispProLight-Regular;
   /* font before - FreightDispProBook-Regular */
   line-height: 43.47px;
 }
@@ -432,8 +436,10 @@
     rgba(255, 255, 255, 0) 100%
   ); */
   backdrop-filter: blur(183px);
-    background: #a0a0a007; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(183px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(183px);
+  /* Add this line first, it fixes blur for Safari*/
   border-radius: 15px;
   padding: 14px 16px 25px;
   display: flex;
@@ -487,18 +493,21 @@
 .why-choose-us__standout--banner {
   display: flex;
   border-radius: 15px;
-   /* background: linear-gradient(
+  /* background: linear-gradient(
     126.6deg,
     rgba(255, 255, 255, 0.12) 28.69%,
     rgba(255, 255, 255, 0) 100%
   ); */
-    background: #a0a0a007; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(183px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(183px);
+  /* Add this line first, it fixes blur for Safari*/
   backdrop-filter: blur(183px);
   overflow: hidden;
   position: relative;
   /* z-index: 2; */
 }
+
 /* .why-choose-us__standout--banner::before {
   content: "";
   position: absolute;
@@ -624,41 +633,33 @@
 }
 
 .our-designs__main .bedrooms {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(255, 255, 255, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 55.91%
-    ),
+      rgba(0, 0, 0, 0.5) 55.91%),
     url(../assets/images/bedroom.png) no-repeat;
   grid-area: a;
 }
 
 .our-designs__main .sitting-rooms {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(255, 255, 255, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 55.91%
-    ),
+      rgba(0, 0, 0, 0.5) 55.91%),
     url(../assets/images/sitting-room.png) no-repeat;
   grid-area: b;
 }
 
 .our-designs__main .dining-rooms {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(255, 255, 255, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 55.91%
-    ),
+      rgba(0, 0, 0, 0.5) 55.91%),
     url(../assets/images/dining-room.png) no-repeat;
   grid-area: c;
 }
 
 .our-designs__main .bathrooms {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(255, 255, 255, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 55.91%
-    ),
+      rgba(0, 0, 0, 0.5) 55.91%),
     url(../assets/images/bathroom.png) no-repeat;
   grid-area: d;
 }
@@ -696,8 +697,10 @@
     rgba(255, 255, 255, 0) 100%
   ); */
   backdrop-filter: blur(140px);
-    background: #a0a0a007; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(140px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(140px);
+  /* Add this line first, it fixes blur for Safari*/
   border: none;
   font-family: "Product Sans Light";
   font-size: 18px;
@@ -831,8 +834,10 @@
     rgba(255, 255, 255, 0) 100%
   ); */
   backdrop-filter: blur(183px);
-    background: #a0a0a007; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(183px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(183px);
+  /* Add this line first, it fixes blur for Safari*/
   padding: 11px 11px 47px;
   display: flex;
   flex-direction: column;
@@ -877,8 +882,9 @@
   border-radius: 58px;
   backdrop-filter: blur(140px);
   /* todo idk what this is */
-    /* background: #a0a0a007;  */
-  -webkit-backdrop-filter: blur(140px); /* Add this line first, it fixes blur for Safari*/
+  /* background: #a0a0a007;  */
+  -webkit-backdrop-filter: blur(140px);
+  /* Add this line first, it fixes blur for Safari*/
 }
 
 .contact-us__details--links li a {
@@ -982,6 +988,7 @@
     font-weight: 300;
     line-height: 30.4px;
   }
+
   .intro-container__airbnb-image--details p:not(:first-child) {
     padding-top: 2.5rem;
   }
@@ -1247,6 +1254,7 @@
   background-color: #888;
   opacity: 1;
 }
+
 .slider__button--container {
   display: flex;
   gap: 20px;
@@ -1265,7 +1273,7 @@
   cursor: pointer;
 }
 
-.slideTwo-hack{
+.slideTwo-hack {
   opacity: 0;
   pointer-events: none;
   width: 100%;
@@ -1299,8 +1307,8 @@
   max-width: 70%;
   width: 100%;
   margin: 0 auto;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .sliderTwo-dots__dot {
@@ -1314,6 +1322,7 @@ align-items: center;
   cursor: pointer;
   transition: all 0.5s;
 }
+
 .sliderTwo-dots__dot:focus {
   border: none;
   outline: none;
@@ -1346,4 +1355,26 @@ align-items: center;
   font-family: inherit;
   color: #333;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 679px) {
+  .hero-container__text-container h1,
+  .hero-container__text-container h1 span,
+  .intro-container__text-container h2,
+  .intro-container__text-container h2 span,
+  .why-choose-our-service__header h2,
+  .why-choose-our-service__header h2 span,
+  .why-choose-us__standout--details-header h3,
+  .why-choose-us__standout--details-header h3 span,
+  .why-choose-us__standout--details-header p,
+  .our-designs__header h2,
+  .our-designs__header h2 span,
+  .our-designs__main--items h3,
+  .testimonials__header h2,
+  .testimonials__header h2 span,
+  .contact-us__details--header h2 {
+    /* font-family: unset; */
+    font-family: "FreightDispjjjProMedium-Italic";
+  }
 }

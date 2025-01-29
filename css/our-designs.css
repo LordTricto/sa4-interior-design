@@ -43,14 +43,14 @@
 .our-design-main__categories-limit {
   padding: 0 16px;
   overflow-x: hidden;
-  background: linear-gradient(
-    126.6deg,
-    rgba(255, 255, 255, 0.12) 28.69%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(126.6deg,
+      rgba(255, 255, 255, 0.12) 28.69%,
+      rgba(255, 255, 255, 0) 100%);
   backdrop-filter: blur(140px);
-    background: #a0a0a007!important; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(20px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007 !important;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(20px);
+  /* Add this line first, it fixes blur for Safari*/
   height: 100%;
   width: 100%;
   border-radius: 58px;
@@ -94,23 +94,25 @@
 }
 
 .our-design-main__categories .active-category {
-  color: var(--white)!important;
+  color: var(--white) !important;
   background: var(--black);
 }
 
-.our-design-main__categories svg{
+.our-design-main__categories svg {
   /* transition-duration:  1s; */
-  color: var(--black)!important;
+  color: var(--black) !important;
   stroke: var(--black);
 }
+
 .category__tab:focus {
-outline: none;
-}
-.category__tab {
-outline: none;
+  outline: none;
 }
 
-.our-design-main__categories .active-category svg{
+.category__tab {
+  outline: none;
+}
+
+.our-design-main__categories .active-category svg {
   stroke: var(--white);
 }
 
@@ -137,14 +139,14 @@ outline: none;
   width: 192px;
   height: 55px;
   border-radius: 58px;
-  background: linear-gradient(
-    126.6deg,
-    rgba(255, 255, 255, 0.12) 28.69%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(126.6deg,
+      rgba(255, 255, 255, 0.12) 28.69%,
+      rgba(255, 255, 255, 0) 100%);
   backdrop-filter: blur(140px);
-    background: #a0a0a007!important; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(20px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007 !important;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(20px);
+  /* Add this line first, it fixes blur for Safari*/
   border: none;
 
   font-family: "Product Sans Light";
@@ -243,8 +245,10 @@ outline: none;
   width: 100%;
   height: 55px;
   backdrop-filter: blur(140px);
-    background: #a0a0a007!important; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(20px); /* Add this line first, it fixes blur for Safari*/
+  background: #a0a0a007 !important;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(20px);
+  /* Add this line first, it fixes blur for Safari*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -258,15 +262,14 @@ outline: none;
   text-decoration-skip-ink: none;
   color: var(--black);
   padding: 14px 16.47px 14px 23.77px;
-  background: linear-gradient(
-    126.6deg,
-    rgba(255, 255, 255, 0.12) 28.69%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(126.6deg,
+      rgba(255, 255, 255, 0.12) 28.69%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 /* responsiveness */
 @media screen and (min-width: 680px) {
+
   /* our design intro section */
   .our-designs-intro {
     margin: 109px 24px 91px;
@@ -316,6 +319,7 @@ outline: none;
 }
 
 @media screen and (min-width: 1024px) {
+
   /* categories */
   .our-design-main__categories {
     margin: 0 auto 73px;
@@ -330,14 +334,14 @@ outline: none;
   .our-design-main__categories-limit {
     padding: 0;
     overflow-x: hidden;
-    background: linear-gradient(
-      126.6deg,
-      rgba(255, 255, 255, 0.12) 28.69%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(126.6deg,
+        rgba(255, 255, 255, 0.12) 28.69%,
+        rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(140px);
-      background: #a0a0a007!important; /* I found this color of blur to work for me better*/
-  -webkit-backdrop-filter: blur(20px); /* Add this line first, it fixes blur for Safari*/
+    background: #a0a0a007 !important;
+    /* I found this color of blur to work for me better*/
+    -webkit-backdrop-filter: blur(20px);
+    /* Add this line first, it fixes blur for Safari*/
     height: 100%;
     width: 100%;
     border-radius: 58px;
@@ -361,9 +365,20 @@ outline: none;
     justify-content: center;
   }
 }
+
 .category__content {
   display: none;
 }
+
 .active-category-content {
   display: flex;
+}
+
+
+@media screen and (max-width: 679px) {
+  .our-designs-intro h1,
+  .our-design-main__contact-us-for-more-designs h3,
+  .our-design-main__contact-us-for-more-designs h3 {
+    font-family: "FreightDispjjjProMedium-Italic";
+  }
 }
