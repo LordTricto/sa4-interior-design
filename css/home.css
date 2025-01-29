@@ -963,6 +963,9 @@
     font-weight: 300;
     line-height: 30.4px;
   }
+  .intro-container__airbnb-image--details p:not(:first-child) {
+    padding-top: 2.5rem;
+  }
 
   .intro-container__text-container p {
     margin: 50px auto 52px;
