@@ -12,3 +12,8 @@
 @import url('./book-us.css');
 @import url('./pricing.css');
 @import url('./fonts.css');
+
+
+main{
+    padding-top: 110.281px;
+}

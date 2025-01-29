@@ -6,6 +6,7 @@ const slider = function () {
   const dotContainer = document.querySelector(".slider-dots");
 
   let curSlide = 0;
+  let slideTimeout = null;
   const maxSlide = slides.length;
 
   // Functions
@@ -29,9 +30,22 @@ const slider = function () {
   };
 
   const goToSlide = function (slide) {
+    clearTimeout(slideTimeout);
+
     slides.forEach(
       (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
     );
+
+    slideTimeout = setTimeout(() => {
+      if (curSlide === maxSlide - 1) {
+        curSlide = 0;
+      } else {
+        curSlide++;
+      }
+
+      goToSlide(curSlide);
+      activateDot(curSlide);
+    }, 5000)
   };
 
   // Next slide

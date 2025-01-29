@@ -1,4 +1,9 @@
 /* introductory page */
+
+.main--none{
+  padding-top: unset!important;
+}
+
 .introductory-page {
   width: 100vw;
   height: 100vh;
@@ -321,7 +326,8 @@
   align-items: center;
   justify-content: center;
   gap: 9px;
-  width: 378px;
+  min-width: 344px;
+  width: fit-content;
   margin: 0 auto;
   height: 55px;
   border-radius: 58px;
@@ -332,7 +338,7 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: var(--black);
-  padding: 14px 12px 14px;
+  padding: 14px 10px 14px 24px;
   overflow: hidden;
 }
 @media (max-width: 400px) {
