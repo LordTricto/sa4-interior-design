@@ -436,8 +436,8 @@
         gsap.to(element, {
           opacity:  index === 0 ? 1: 1,
           translateY:  index === 0 ? 0: 0,
-          duration: index === 0 ? 0: 2,
-         ease: "expo.out",
+          duration: index === 0 ? 0: 1,
+          ease: "in-out",
           scrollTrigger: {
             trigger: index === 0 ? element : trigger[index - 1],
             start: index === 0 ? "center top" : 'bottom center',
