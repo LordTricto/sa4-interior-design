@@ -479,7 +479,7 @@
   backdrop-filter: blur(183px);
   overflow: hidden;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
 }
 /* .why-choose-us__standout--banner::before {
   content: "";
