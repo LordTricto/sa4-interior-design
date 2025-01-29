@@ -1427,3 +1427,13 @@
   bottom: 52px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 460px) {
+
+  .why-choose-us__standout--details-header h3 {
+    font-size: 26px;
+    line-height: 38.13px;
+    margin-bottom: 13px;
+   }
+
+}
