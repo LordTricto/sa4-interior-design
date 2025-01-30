@@ -1,98 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SA4 Interior Design | About Us</title>
     <link rel="stylesheet" href="css/styles.css">
-     <link
-      rel="preload"
-      href="fonts/FreightDispProMedium-Italic.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProMedium-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProMedium-Semibold-Italic.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProMedium-Semibold-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProLight-Italic.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProLight-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProBlack-Italic.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProBlack-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProBold-Italic.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProBold-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProBook-Italic.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/FreightDispProBook-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
+    <link rel="preload" href="fonts/FreightDispProMedium-Italic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProMedium-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProMedium-Semibold-Italic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProMedium-Semibold-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProLight-Italic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProLight-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProBlack-Italic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProBlack-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProBold-Italic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProBold-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProBook-Italic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/FreightDispProBook-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
-     <!-- Header Section -->
-     <header id="header">
+    <!-- Header Section -->
+    <header id="header">
         <div class="header">
             <div class="header-container">
                 <div class="header-container__logo">
@@ -103,7 +35,7 @@
                 <nav class="header-container__nav">
                     <ul class="header-container__nav--links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html"  class="active-link">About Us</a></li>
+                        <li><a href="about-us.html" class="active-link">About Us</a></li>
                         <li><a href="our-designs.html">Our Designs</a></li>
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="book-us.html">Book Us</a></li>
@@ -119,7 +51,7 @@
     </header>
     <main>
         <section id="about-us-intro">
-            <div class="about-us-intro">
+            <div class="about-us-intro gsap-about-us">
                 <h1>Everything you need to know about our operations</h1>
             </div>
         </section>
@@ -132,14 +64,20 @@
                     <div class="about-us-main__cards--details">
                         <h2><span>1.</span> The process</h2>
                         <p>
-                            We engage with you to gain a comprehensive understanding of your fundamental brand values, allowing us to meticulously tailor our design approach to align with your vision. Collaboration is crucial as we seek to understand your target market, including potential buyers and their lifestyles, while considering the site location to create a truly aspirational show home.
+                            We engage with you to gain a comprehensive understanding of your fundamental brand values,
+                            allowing us to meticulously tailor our design approach to align with your vision.
+                            Collaboration is crucial as we seek to understand your target market, including potential
+                            buyers and their lifestyles, while considering the site location to create a truly
+                            aspirational show home.
                         </p>
                         <p>
-                            We request detailed drawings and plans to ensure that all elements we provide are accurately scaled. At this stage, we also discuss the project budget and timelines to ensure that we specify items that can be procured within your deadlines.
+                            We request detailed drawings and plans to ensure that all elements we provide are accurately
+                            scaled. At this stage, we also discuss the project budget and timelines to ensure that we
+                            specify items that can be procured within your deadlines.
                         </p>
                     </div>
                 </div>
-                <div class="about-us-main__cards">
+                <div class="about-us-main__cards gsap-about-us-card">
                     <div class="about-us-main__cards--image">
                         <img src="assets/images/design-concept.png" alt="Designed kitchen">
                     </div>
@@ -147,39 +85,54 @@
                         <div class="about-us-main__cards--details-design-intro">
                             <h2><span>2.</span> Design concept</h2>
                             <p>
-                                Having chosen a specific designer to suit the style and personality of the show home we develop a full design scheme, comprising mood boards, furniture layout plan with comprehensive samples of furniture, lighting, upholstery, soft furnishings, artwork, mirrors, table lamps and accessories. You can touch and feel the fabrics and materials, which often include items of bespoke cabinetry.
+                                Having chosen a specific designer to suit the style and personality of the show home we
+                                develop a full design scheme, comprising mood boards, furniture layout plan with
+                                comprehensive samples of furniture, lighting, upholstery, soft furnishings, artwork,
+                                mirrors, table lamps and accessories. You can touch and feel the fabrics and materials,
+                                which often include items of bespoke cabinetry.
                             </p>
                         </div>
                         <div class="about-us-main__cards--details-final-design">
                             <h3>Final Design</h3>
                             <p>
-                                From our discussions during the design concept meeting, we then fine tune the scheme making any necessary alterations to ensure it fulfils the brief and your expectations. We will then present the refined design concept to you.
+                                From our discussions during the design concept meeting, we then fine tune the scheme
+                                making any necessary alterations to ensure it fulfils the brief and your expectations.
+                                We will then present the refined design concept to you.
                             </p>
-                        </div>  
+                        </div>
                     </div>
                 </div>
-                <div class="about-us-main__cards">
+                <div class="about-us-main__cards gsap-about-us-card">
                     <div class="about-us-main__cards--image">
                         <img src="assets/images/acceptance.png" alt="A man toasting with a wine glass">
                     </div>
                     <div class="about-us-main__cards--details">
                         <h2><span>3.</span> Acceptance</h2>
                         <p>
-                            Upon written acceptance your project will be allocated to the Project Manager who will manage the process through to installation. The Project Manager will ensure all stages are processed and that everything is available for the install.  They liaise with the Site Manager and provide a seamless service, which includes ensuring delivery of wallcoverings and lighting are on site in time for your decorator and electrician.
+                            Upon written acceptance your project will be allocated to the Project Manager who will
+                            manage the process through to installation. The Project Manager will ensure all stages are
+                            processed and that everything is available for the install.  They liaise with the Site
+                            Manager and provide a seamless service, which includes ensuring delivery of wallcoverings
+                            and lighting are on site in time for your decorator and electrician.
                         </p>
                         <p>
-                            Your Account Manager will give you regular updates as the show home process moves along progressing towards the deadline. We do offer a decorating and electrical installation service if required.
+                            Your Account Manager will give you regular updates as the show home process moves along
+                            progressing towards the deadline. We do offer a decorating and electrical installation
+                            service if required.
                         </p>
                     </div>
                 </div>
-                <div class="about-us-main__cards">
+                <div class="about-us-main__cards gsap-about-us-card">
                     <div class="about-us-main__cards--image">
                         <img src="assets/images/installation.png" alt="An Engineer installing">
                     </div>
                     <div class="about-us-main__cards--details">
                         <h2><span>4.</span> Installation</h2>
                         <p>
-                            Our highly experienced installation team will expertly execute the fitting of your show home. All of our team have CSCS Health and Safety qualifications.  We understand that occasionally the build programme may slip but the Launch date doesn’t! We work with you, and we understand how important this is.
+                            Our highly experienced installation team will expertly execute the fitting of your show
+                            home. All of our team have CSCS Health and Safety qualifications.  We understand that
+                            occasionally the build programme may slip but the Launch date doesn’t! We work with you, and
+                            we understand how important this is.
                         </p>
                     </div>
                 </div>
@@ -192,7 +145,63 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.registerPlugin(ScrollTrigger)
+
+            const tl = gsap.timeline();
+            tl.from(".gsap-about-us", {
+                y: "-20%",
+                opacity: 0,
+                // translateX: "20%",
+                duration: 1.5,
+                ease: "in-out",
+            });
+            tl.from(".about-us-main__cards-the-process .about-us-main__cards--image", {
+                x: "-10%",
+                opacity: 0,
+                duration: 1.5,
+                ease: "in-out",
+            }, "<");
+            tl.from(".about-us-main__cards-the-process .about-us-main__cards--details", {
+                x: "10%",
+                opacity: 0,
+                duration: 1.5,
+                ease: "in-out",
+            }, "<");
+
+
+            let trigger = gsap.utils.toArray('.gsap-about-us-card');
+
+            trigger.forEach((element, index) => {
+                const q = gsap.utils.selector(element);
+
+                const tl2 = gsap.timeline(
+                    {
+                        scrollTrigger: {
+                            trigger: index === 0 ? ".about-us-main__cards-the-process" : trigger[index - 1],
+                            start: index === 0 ? "bottom center+=300" : 'bottom center+=300',
+                        }
+                    }
+                );
+                tl2.from(q(".about-us-main__cards--image"), {
+                    x: "10%",
+                    opacity: 0,
+                    duration: 1.5,
+                    ease: "in-out",
+                });
+                tl2.from(q(".about-us-main__cards--details"), {
+                    x: "-10%",
+                    opacity: 0,
+                    duration: 1.5,
+                    ease: "in-out",
+                }, "<");
+            })
+        });
+
+    </script>
     <script src="js/menu.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

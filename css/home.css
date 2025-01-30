@@ -214,6 +214,7 @@
 }
 
 .hero-container__text-container {
+  /* opacity: 0; */
   max-width: 993px;
   height: fit-content;
 }
@@ -858,6 +859,10 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.contact-us__image .gsap-book-us-img {
+  background-color: #9c8a54;
 }
 
 .contact-us__image img {

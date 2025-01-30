@@ -428,15 +428,26 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       gsap.registerPlugin(ScrollTrigger)
+
+      // const tl = gsap.timeline();
+      const tl = gsap.timeline({ delay: 4 });
+      tl.from(".hero-container__text-container", {
+        x: "-20%", 
+        opacity: 0,
+        // translateX: "20%",
+        duration: 1.5,
+        ease: "in-out",
+      });
+      
       let trigger = gsap.utils.toArray('.hidden');
 
       trigger.forEach((element, index) => {
         // const q = gsap.utils.selector(element);
         // console.log(q)
         gsap.to(element, {
-          opacity:  index === 0 ? 1: 1,
-          translateY:  index === 0 ? 0: 0,
-          duration: index === 0 ? 0: 1.5,
+          opacity: index === 0 ? 1 : 1,
+          translateY: index === 0 ? 0 : 0,
+          duration: index === 0 ? 0 : 1.5,
           ease: "in-out",
           scrollTrigger: {
             trigger: index === 0 ? element : trigger[index - 1],
