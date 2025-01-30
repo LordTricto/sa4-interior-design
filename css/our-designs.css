@@ -75,7 +75,7 @@
   align-items: center;
   justify-content: center;
   /* width: 154px; */
-  width: 164px;
+  width: fit-content;
   height: 38px;
   /* padding: 7px 21px 7px 21px; */
   padding: 7px 18px;
@@ -91,6 +91,10 @@
   text-decoration-skip-ink: none;
   background: var(--white);
   color: #00000094;
+}
+.our-design-main__categories span {
+
+  white-space: nowrap;
 }
 
 .our-design-main__categories .active-category {
@@ -369,7 +373,7 @@
 
   .our-design-main__categories button {
     /* width: 154px; */
-    width: unset;
+    /* width: unset; */
     /* padding: 7px 21px 7px 21px; */
     font-size: 16px;
     font-weight: 400;
