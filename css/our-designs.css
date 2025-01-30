@@ -121,12 +121,12 @@
 }
 
 .our-design-main__designs {
-  max-width: 1216px;
-  margin: 0 auto 56px;
-  padding: 0 14px;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+ width: 100%;
+ place-content: center;
+ margin: 0 auto;
+gap: 24px;
 }
 
 .our-design-main__designs--card {
@@ -308,7 +308,7 @@
   }
 
   .our-design-main__designs {
-    margin: 0 auto 123px;
+     grid-template-columns: repeat(auto-fit, minmax(350px, 380px));
   }
 
   .our-design-main__designs--card {
@@ -370,6 +370,12 @@
     gap: 13px;
     padding: 14px 16px;
   }
+  /* .flex-center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  } */
 
   .our-design-main__categories button {
     /* width: 154px; */
@@ -379,10 +385,6 @@
     font-weight: 400;
     line-height: 24px;
   }
-
-  .our-design-main__designs {
-    justify-content: center;
-  }
 }
 
 .category__content {
@@ -390,7 +392,17 @@
 }
 
 .active-category-content {
+  display: grid;
+}
+
+.our-design-content-t{
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto; 
+  padding: 0 24px 72px 24px
 }
 
 
