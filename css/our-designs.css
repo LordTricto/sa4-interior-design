@@ -92,6 +92,7 @@
   background: var(--white);
   color: #00000094;
 }
+
 .our-design-main__categories span {
 
   white-space: nowrap;
@@ -121,12 +122,18 @@
 }
 
 .our-design-main__designs {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
- width: 100%;
- place-content: center;
- margin: 0 auto;
-gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 380px));
+  width: 100%;
+  place-content: start;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+@media screen and (min-width: 1240px) {
+  .our-design-main__designs {
+    place-content: center;
+  }
 }
 
 .our-design-main__designs--card {
@@ -187,18 +194,19 @@ gap: 24px;
   background: url(../assets/images/design-card-4.png) no-repeat;
 }
 
-.bedroom-1{
+.bedroom-1 {
   background: url(../assets/images/bedroom-1.jpeg) no-repeat;
 }
 
-.dining-1{
+.dining-1 {
   background: url(../assets/images/dining-1.jpeg) no-repeat;
 }
-.dining-2{
+
+.dining-2 {
   background: url(../assets/images/dining-2.jpeg) no-repeat;
 }
 
-.bathroom-1{
+.bathroom-1 {
   background: url(../assets/images/bathroom-1.jpeg) no-repeat;
 }
 
@@ -308,7 +316,7 @@ gap: 24px;
   }
 
   .our-design-main__designs {
-     grid-template-columns: repeat(auto-fit, minmax(350px, 380px));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 380px));
   }
 
   .our-design-main__designs--card {
@@ -370,6 +378,7 @@ gap: 24px;
     gap: 13px;
     padding: 14px 16px;
   }
+
   /* .flex-center{
     display: flex;
     justify-content: flex-start;
@@ -395,15 +404,17 @@ gap: 24px;
   display: grid;
 }
 
-.our-design-content-t{
+.our-design-content-t {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto; 
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 0 24px 72px 24px
 }
+
+
 
 
 /* @media screen and (max-width: 679px) {

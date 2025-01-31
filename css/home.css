@@ -1016,6 +1016,7 @@
   }
 
   .intro-container__airbnb-image--details p {
+    font-family: "Product Sans Light";
     font-weight: 300;
     line-height: 30.4px;
   }
