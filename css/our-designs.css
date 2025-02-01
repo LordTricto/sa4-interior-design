@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+.our-designs-preview img,
+.our-designs-preview span {
+  pointer-events: none;
+}
+
 .our-designs-intro h1 {
   font-family: FreightDispProLight-Italic;
   font-size: 45px;
@@ -130,8 +135,11 @@
   gap: 24px;
 }
 
+
 @media screen and (min-width: 1240px) {
-  .our-design-main__designs {
+  .our-design-main__designs.category__content--1,
+  .our-design-main__designs.category__content--2,
+  .our-design-main__designs.category__content--3 {
     place-content: center;
   }
 }
@@ -187,11 +195,15 @@
 }
 
 .our-design-main-card-4 {
-  background: url(../assets/images/design-card-3.png) no-repeat;
+  background: url(../assets/images/design-card-4.png) no-repeat;
 }
 
 .our-design-main-card-5 {
-  background: url(../assets/images/design-card-4.png) no-repeat;
+  background: url(../assets/images/design-card-5.png) no-repeat;
+}
+
+.our-design-main-card-6 {
+  background: url(../assets/images/design-card-6.png) no-repeat;
 }
 
 .bedroom-1 {
@@ -210,17 +222,6 @@
   background: url(../assets/images/bathroom-1.jpeg) no-repeat;
 }
 
-.our-design-main-card-6 {
-  background: url(../assets/images/design-card-1.png) no-repeat;
-}
-
-.our-design-main-card-7 {
-  background: url(../assets/images/design-card-5.png) no-repeat;
-}
-
-.our-design-main-card-8 {
-  background: url(../assets/images/design-card-6.png) no-repeat;
-}
 
 .our-design-main__designs--card {
   background-size: cover;
@@ -414,8 +415,58 @@
   padding: 0 24px 72px 24px
 }
 
+#our-design-modal {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+  background: #0000001a;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+}
 
+.our-design-modal-show {
+  display: flex !important;
+}
 
+.our-design-modal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.our-design-modal-toggler {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  /* padding-bottom: 2rem; */
+}
+
+.our-design-modal-content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#our-design-modal-img {
+  width: 100%;
+  max-height: 40rem;
+}
+
+@media screen and (min-width: 640px) {
+  #our-design-modal {
+    padding: 2rem;
+  }
+}
 
 /* @media screen and (max-width: 679px) {
   .our-designs-intro h1,

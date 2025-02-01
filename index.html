@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SA4 Interior Design</title>
+  <meta name="SA4 Interior Design" content="Interior Design Company" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <title>SA4 Interior Design</title>
   <link rel="preload" href="fonts/FreightDispProMedium-Italic.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="fonts/FreightDispProMedium-Regular.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="fonts/FreightDispProMedium-Semibold-Italic.ttf" as="font" type="font/ttf" crossorigin />
@@ -402,7 +406,8 @@
             <div class="contact-us__details--links">
               <ul>
                 <li>
-                  <a href="https://api.whatsapp.com/send?phone=447718855013" target="_blank"><img src="assets/icons/whatsapp.svg" alt="whatsapp" /><span>Send us a Whatsapp
+                  <a href="https://api.whatsapp.com/send?phone=447718855013" target="_blank"><img
+                      src="assets/icons/whatsapp.svg" alt="whatsapp" /><span>Send us a Whatsapp
                       message</span><img src="assets/icons/right-arrow.svg" alt="right arrow" /></a>
                 </li>
                 <!-- <li>
@@ -410,8 +415,8 @@
                       info@sa4.com</span><img src="assets/icons/right-arrow.svg" alt="right arrow" /></a>
                 </li> -->
                 <li>
-                  <a href="tel:+447718855013"><img src="assets/icons/phone.svg" alt="call" /><span>Give us a call | +447718855013</span><img
-                      src="assets/icons/right-arrow.svg" alt="right arrow" /></a>
+                  <a href="tel:+447718855013"><img src="assets/icons/phone.svg" alt="call" /><span>Give us a call |
+                      +447718855013</span><img src="assets/icons/right-arrow.svg" alt="right arrow" /></a>
                 </li>
               </ul>
             </div>
@@ -432,13 +437,13 @@
       // const tl = gsap.timeline();
       const tl = gsap.timeline({ delay: 4 });
       tl.from(".hero-container__text-container", {
-        x: "-20%", 
+        x: "-20%",
         opacity: 0,
         // translateX: "20%",
         duration: 1.5,
         ease: "in-out",
       });
-      
+
       let trigger = gsap.utils.toArray('.hidden');
 
       trigger.forEach((element, index) => {
