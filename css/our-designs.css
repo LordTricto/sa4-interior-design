@@ -422,13 +422,15 @@
   align-items: center;
   flex-direction: column;
   padding: 4rem;
-  background: #0000001a;
   height: 100vh;
   width: 100vw;
   top: 0;
   left: 0;
   z-index: 1000;
   backdrop-filter: blur(20px);
+  background: #a0a0a007;
+  /* I found this color of blur to work for me better*/
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .our-design-modal-show {
