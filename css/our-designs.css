@@ -462,7 +462,7 @@
 
 #our-design-modal-img {
   width: 100%;
-  max-height: 40rem;
+  max-height: calc(100vh - 100px);
   object-fit: cover;
 }
 
@@ -470,6 +470,9 @@
   #our-design-modal {
     padding: 1rem;
   }
+  #our-design-modal-img {
+  max-height: calc(100vh - 52px);
+}
    #our-design-modal img {
     height: 100% !important;
 
