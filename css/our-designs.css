@@ -182,32 +182,32 @@
   cursor: pointer;
 }
 
-.our-design-main-card-1 {
-  background: url(../assets/images/design-card-1.png) no-repeat;
+.sitting-room-1 {
+  background: url(../assets/images/sitting-room-1.jpeg) no-repeat;
 }
 
-.our-design-main-card-2 {
-  background: url(../assets/images/design-card-2.png) no-repeat;
+.sitting-room-2 {
+  background: url(../assets/images/sitting-room-2.jpeg) no-repeat;
 }
 
-.our-design-main-card-3 {
-  background: url(../assets/images/design-card-3.png) no-repeat;
-}
-
-.our-design-main-card-4 {
-  background: url(../assets/images/design-card-4.png) no-repeat;
-}
-
-.our-design-main-card-5 {
-  background: url(../assets/images/design-card-5.png) no-repeat;
-}
-
-.our-design-main-card-6 {
-  background: url(../assets/images/design-card-6.png) no-repeat;
+.sitting-room-3 {
+  background: url(../assets/images/sitting-room-3.jpeg) no-repeat;
 }
 
 .bedroom-1 {
   background: url(../assets/images/bedroom-1.jpeg) no-repeat;
+}
+
+.bedroom-2 {
+  background: url(../assets/images/bedroom-2.jpeg) no-repeat;
+}
+
+.bedroom-3 {
+  background: url(../assets/images/bedroom-3.jpeg) no-repeat;
+}
+
+.bedroom-4 {
+  background: url(../assets/images/bedroom-4.jpeg) no-repeat;
 }
 
 .dining-1 {
@@ -222,6 +222,14 @@
   background: url(../assets/images/bathroom-1.jpeg) no-repeat;
 }
 
+
+.entryway-1 {
+  background: url(../assets/images/entryway-1.jpeg) no-repeat;
+}
+
+.workspace-1 {
+  background: url(../assets/images/workspace-1.jpeg) no-repeat;
+}
 
 .our-design-main__designs--card {
   background-size: cover;
