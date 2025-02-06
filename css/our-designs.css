@@ -137,6 +137,7 @@
 
 
 @media screen and (min-width: 1240px) {
+
   .our-design-main__designs.category__content--1,
   .our-design-main__designs.category__content--2,
   .our-design-main__designs.category__content--3 {
@@ -469,19 +470,23 @@
 }
 
 #our-design-modal-img {
-  width: 100%;
+  /* width: 100%; */
   max-height: calc(100vh - 100px);
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 @media screen and (max-width: 640px) {
   #our-design-modal {
     padding: 1rem;
   }
+
   #our-design-modal-img {
-  max-height: calc(100vh - 52px);
-}
-   #our-design-modal img {
+    width: 100%;
+    object-fit: cover;
+    max-height: calc(100vh - 52px);
+  }
+
+  #our-design-modal img {
     height: 100% !important;
 
   }
